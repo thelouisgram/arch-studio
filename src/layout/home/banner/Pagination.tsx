@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import { PaginationProps } from "../../../../types/home";
 
-const Pagination:React.FC = () => {
-  const [page, setPage] = useState(0);
+const Pagination: React.FC<PaginationProps> = ({ page, setPage }) => {
   const pages = ["01", "02", "03", "04"];
   const pagesButton = pages.map((item: any, index: number) => {
     return (
@@ -11,14 +11,18 @@ const Pagination:React.FC = () => {
         className={`w-20 h-20 cursor-pointer ${
           page === index
             ? "bg-dark text-white"
-            : "bg-white text-dark hover:bg-grey "
+            : "bg-white text-darkGrey hover:bg-grey "
         } flex justify-center items-center `}
       >
         {item}
       </div>
     );
   });
-  return <div className="absolute left-0 bottom-0 flex font-semibold">{pagesButton}</div>;
+  return (
+    <div className="absolute left-0 bottom-0 flex font-semibold z-[5]">
+      {pagesButton}
+    </div>
+  );
 };
 
 export default Pagination;

@@ -1,15 +1,23 @@
 "use client";
 
-import Pagination from "@/layout/home/Pagination";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import FetchData from "../../utils/home/FetchData";
+import Banner from "@/layout/home/banner/Banner";
+import Welcome from "@/layout/home/welcome/Welcome";
+import Hero from "@/layout/home/about/Hero";
+import Featured from "@/layout/home/featured/Featured";
 
 const Page = () => {
+  const { state } = FetchData("/data.json");
+  const { data } = state;
 
   return (
-    <div className="px-20 relative h-[720px] w-full">
-      <Pagination />
-    </div>
+    <section className="w-full h-full">
+      <Banner data={data} />
+      <Welcome data={data}/>
+      <Hero  data={data}/>
+      <Featured data={data} />
+    </section>
   );
 };
 

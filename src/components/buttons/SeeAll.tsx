@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
 
-const Portfolio = () => {
+const SeeAll = () => {
   return (
     <Link
       href="portfolio"
-      className="z-[5] px-[30px] py-[24px] w-[254px] bg-dark text-white text-[20px] font-semibold
+      className="z-[5] px-[30px] py-[24px] bg-dark text-white text-[20px] font-semibold
        flex cursor-pointer items-center justify-center gap-4"
     >
-      <p>See Our Portfolio</p>
+      <p>See All</p>
       <Image
         src="/assets/icons/arrow-icon.svg"
         alt="arrow"
@@ -18,6 +18,6 @@ const Portfolio = () => {
       />
     </Link>
   );
-};
+}
 
-export default Portfolio;
+export default SeeAll
