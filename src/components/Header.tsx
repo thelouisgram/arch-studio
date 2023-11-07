@@ -35,7 +35,6 @@ const Header = () => {
       {nav && <MobileNav />}
       <div className="hidden ss:flex">
         <div className="w-[1px] h-[100px] bg-[#EEEFF4] absolute left-[10px] top-0" />
-        nM
       </div>
     </div>
   );
