@@ -17,7 +17,7 @@ const Featured: React.FC<DataProps> = ({ data }) => {
           return (
             <div key={item.id} className="relative w-full h-full">
               <Image
-                src={item.image.desktop}
+                src={item?.image.desktop}
                 alt="portfolio"
                 width={1000}
                 height={1000}

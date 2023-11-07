@@ -20,16 +20,18 @@ const Leaders: React.FC<DataProps> = ({ data }) => {
               <div className="w-full absolute h-full top-0 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="z-[4] flex h-full w-full justify-center items-center gap-3 ">
                   <Image
-                    src="/assets/icons/linkedin-icon.svg"
+                    src="/assets/icons/linkedin.svg"
                     alt="linkedin logo"
-                    width={33}
-                    height={27}
+                    width={30}
+                    height={30}
+                    className="z-[4]"
                   />
                   <Image
-                    src="/assets/icons/twitter-icon.svg"
+                    src="/assets/icons/twitter.svg"
                     alt="twitter logo"
-                    width={33}
-                    height={27}
+                    width={30}
+                    height={30}
+                    className="z-[4]"
                   />
                   <div className="w-full absolute h-full top-0 bg-black opacity-25 z-[2]" />
                 </div>
