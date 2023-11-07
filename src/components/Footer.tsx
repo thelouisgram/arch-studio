@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="px-20 w-full h-[205px] flex items-center">
       <Link
         href="/"
-        className="h-[205px] w-[198px] bg-dark flex justify-center items-center cursor-pointer"
+        className="h-[205px] min-w-[198px] bg-dark flex justify-center items-center cursor-pointer"
       >
         <Image
           src="/assets/icons/logo-white.svg"
@@ -19,7 +19,7 @@ const Footer = () => {
         />
       </Link>
       <div className="w-full h-full relative flex items-center">
-        <div className="w-[75%] bg-grey pl-16 h-full items-center">
+        <div className="w-[80%] bg-grey pl-16 h-full items-center">
           <NavLinks />
         </div>
         <div className='absolute right-0'>
