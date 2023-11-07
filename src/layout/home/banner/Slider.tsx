@@ -11,7 +11,7 @@ const Slider: React.FC<SliderProps> = ({ data, page }) => {
         <h1 className="font-bold leading-none w-[450px] text-[84px] z-[10] mb-[20px]">
           {slider?.title}
         </h1>
-        <p className="z-[10] mb-[30px] w-[450px] text-[20px] leading-tight">
+        <p className="z-[10] mb-[30px] w-[450px] text-[22px] leading-tight">
           {slider?.content}
         </p>
         <Portfolio />

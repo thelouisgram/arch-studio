@@ -10,7 +10,7 @@ export interface PaginationProps{
     setPage: (page:number) => void;
 }
 
-export interface BannerProps{
+export interface DataProps{
     data?: any;
 }
 

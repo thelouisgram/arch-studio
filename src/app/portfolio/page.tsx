@@ -19,7 +19,7 @@ const Page = () => {
               height={1000}
             />
             <div className="absolute p-[30px] bottom-0 left-0 z-[4]">
-              <h4 className="text-white font-semibold text-[20px]">
+              <h4 className="text-white font-semibold text-[22px]">
                 {item.title}
               </h4>
               <p className="text-white">View All Projects</p>

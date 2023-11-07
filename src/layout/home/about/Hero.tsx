@@ -1,10 +1,9 @@
 import React from "react";
-import { BannerProps } from "../../../../types/home";
+import { DataProps } from "../../../../types/home";
 import About from "@/components/buttons/About";
 import Image from "next/image";
 
-const Hero: React.FC<BannerProps> = ({ data }) => {
-    
+const Hero: React.FC<DataProps> = ({ data }) => {
   return (
     <div className="w-full h-[560px] px-20 mb-[200px]">
       <div className="w-full h-full relative pl-[180px] flex flex-col justify-center">

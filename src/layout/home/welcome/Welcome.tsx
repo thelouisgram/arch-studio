@@ -1,10 +1,10 @@
 import React from "react";
-import { BannerProps } from "../../../../types/home";
+import { DataProps } from "../../../../types/home";
 import Image from "next/image";
 
-const Welcome: React.FC<BannerProps> = ({ data }) => {
+const Welcome: React.FC<DataProps> = ({ data }) => {
   const details = data?.HomePageWelcome;
-  
+
   return (
     <div className="w-full h-full px-20 mb-[128px]">
       <div className="w-full h-full relative z-[10]">
@@ -16,7 +16,7 @@ const Welcome: React.FC<BannerProps> = ({ data }) => {
             <h3 className="text-dark text-[64px] w-[450px] leading-none font-semibold mb-[40px]">
               {details?.heading}
             </h3>
-            <div className="w-[450px] flex flex-col gap-[30px] text-[20px] text-darkGrey">
+            <div className="w-[450px] flex flex-col gap-[30px] text-[22px] text-darkGrey">
               <p>
                 We have a unique network and skill-set to help bring your
                 projects to life. Our small team of highly skilled individuals

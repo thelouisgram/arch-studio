@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Pagination from "./Pagination";
-import { BannerProps } from "../../../../types/home";
+import { DataProps } from "../../../../types/home";
 import Slider from "./Slider";
 
-const Banner: React.FC<BannerProps> = ({ data }) => {
+const Banner: React.FC<DataProps> = ({ data }) => {
   const [page, setPage] = useState(0);
   return (
     <div className="px-20 relative h-[720px] w-full mb-[100px]">

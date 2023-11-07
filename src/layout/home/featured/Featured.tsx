@@ -1,9 +1,9 @@
 import React from "react";
-import { BannerProps } from "../../../../types/home";
+import { DataProps } from "../../../../types/home";
 import SeeAll from "@/components/buttons/SeeAll";
 import Image from "next/image";
 
-const Featured: React.FC<BannerProps> = ({ data }) => {
+const Featured: React.FC<DataProps> = ({ data }) => {
   const portfolio = data?.portfolioData;
   const selectedProjects = portfolio?.slice(3, 6);
   return (
@@ -26,7 +26,7 @@ const Featured: React.FC<BannerProps> = ({ data }) => {
                 {index + 1}
               </h2>
               <div className="absolute p-[30px] bottom-0 left-0 z-[4]">
-                <h4 className="text-white font-semibold text-[20px]">
+                <h4 className="text-white font-semibold text-[22px]">
                   {item.title}
                 </h4>
                 <p className="text-white">View All Projects</p>

@@ -19,7 +19,7 @@ const Footer = () => {
         />
       </Link>
       <div className="w-full h-full relative flex items-center">
-        <div className="w-[80%] bg-grey pl-16 h-full items-center">
+        <div className="w-[80%] lg:w-[85%] bg-grey pl-16 h-full items-center">
           <NavLinks />
         </div>
         <div className='absolute right-0'>
