@@ -29,7 +29,7 @@ const Heritage:React.FC<DataProps> = ({data}) => {
         </div>
       </div>
       <div className='w-full h-full'>
-        <Image src={heritage.heritageImg} alt='heritage image' width={1000} height={1000} className='w-full h-full object-cover'/>
+        <Image src={heritage?.heritageImg} alt='heritage image' width={1000} height={1000} className='w-full h-full object-cover'/>
       </div>
     </div>
   );
