@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const Hero: React.FC<DataProps> = ({ data }) => {
   return (
-    <div className="w-full h-[560px] px-20 mb-[200px]">
-      <div className="w-full h-full relative pl-[180px] flex flex-col justify-center">
-        <h2 className="w-[400px] font-bold text-[64px] text-white leading-none mb-10">
+    <div className="w-full h-[560px] px-0 ss:px-16 md:px-20 mb-[200px]">
+      <div className="w-full h-full relative px-[30px] ss:pr-[0px] ss:pl-[50px] md:pl-[180px] flex flex-col justify-center">
+        <h2 className="ss:w-[400px] font-bold text-[40px] ss:text-[64px] text-white leading-none mb-10">
           Small team, big ideas
         </h2>
         <About />

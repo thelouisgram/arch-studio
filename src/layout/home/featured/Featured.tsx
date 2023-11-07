@@ -7,12 +7,14 @@ const Featured: React.FC<DataProps> = ({ data }) => {
   const portfolio = data?.portfolioData;
   const selectedProjects = portfolio?.slice(3, 6);
   return (
-    <div className="h-full w-full px-20 mb-[200px]">
+    <div className="h-full w-full px-[30px] ss:px-20 mb-[200px]">
       <div className="w-full flex justify-between items-center mb-[70px]">
-        <h3 className="text-[64px] font-semibold leading-none">Featured</h3>
-        <SeeAll />
+        <h3 className="text-[40px] ss:text-[64px] w-full text-center ss:text-left font-semibold leading-none">Featured</h3>
+        <div className="hidden ss:flex">
+          <SeeAll />
+        </div>
       </div>
-      <div className="w-full h-full flex gap-6">
+      <div className="w-full h-full flex flex-col md:flex-row gap-6">
         {selectedProjects?.map((item: any, index: number) => {
           return (
             <div key={item.id} className="relative w-full h-full">
@@ -21,6 +23,21 @@ const Featured: React.FC<DataProps> = ({ data }) => {
                 alt="portfolio"
                 width={1000}
                 height={1000}
+                className="hidden md:flex"
+              />
+              <Image
+                src={item?.image.tablet}
+                alt="portfolio"
+                width={1000}
+                height={1000}
+                className="ss:flex md:hidden hidden"
+              />
+              <Image
+                src={item?.image.mobile}
+                alt="portfolio"
+                width={1000}
+                height={1000}
+                className="flex ss:hidden"
               />
               <h2 className="font-bold text-[200px] absolute right-[-15px] top-[10px] leading-none text-white opacity-[50%]">
                 {index + 1}
@@ -35,6 +52,9 @@ const Featured: React.FC<DataProps> = ({ data }) => {
             </div>
           );
         })}
+        <div className="flex ss:hidden w-full justify-center">
+          <SeeAll />
+        </div>
       </div>
     </div>
   );

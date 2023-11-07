@@ -29,7 +29,7 @@ const Page = () => {
         <section
           className={` ${
             !isLoading && data ? "display-block" : "display-none"
-          } font-Spartan px-16 container w-full h-full text-dark relative`}
+          } font-Spartan px-0 ss:px-10 md:px-16 md:container w-full h-full text-dark relative`}
         >
           <Header />
           <Banner data={data} />

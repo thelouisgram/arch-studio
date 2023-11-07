@@ -19,7 +19,7 @@ const Pagination: React.FC<PaginationProps> = ({ page, setPage }) => {
     );
   });
   return (
-    <div className="absolute left-0 bottom-0 flex font-semibold z-[5]">
+    <div className="absolute left-0 ss:left-16 md:left-0 bottom-0 flex font-semibold z-[5]">
       {pagesButton}
     </div>
   );

@@ -6,7 +6,7 @@ const SeeAll = () => {
   return (
     <Link
       href="portfolio"
-      className="z-[5] px-[30px] py-[24px] bg-dark text-white text-[20px] font-semibold
+      className="z-[5] px-[30px] py-[24px] w-[164px] bg-dark text-white text-[18px] font-semibold
        flex cursor-pointer items-center justify-center gap-4"
     >
       <p>See All</p>

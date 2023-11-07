@@ -27,21 +27,36 @@ const Page = () => {
         <section
           className={` ${
             !isLoading && data ? "display-block" : "display-none"
-          } font-Spartan px-16 container w-full h-full text-dark relative`}
+          } font-Spartan px-0 ss:px-10 md:px-16 md:container w-full h-full text-dark relative`}
         >
           <Header />
-          <div className="w-full h-full grid grid-cols-3 gap-7 px-20 mb-[128px] relative">
+          <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 gap-7 px-[30px] ss:px-16 md:px-20 mb-[128px] relative">
             {portfolio?.map((item: any, index: number) => {
               return (
                 <div
                   key={item.id}
-                  className="relative w-full h-full aspect-[452/724]"
+                  className="relative w-full h-full md:aspect-[452/724]"
                 >
                   <Image
                     src={item.image.desktop}
                     alt="portfolio"
                     width={1000}
                     height={1000}
+                    className="hidden md:flex"
+                  />
+                  <Image
+                    src={item.image.tablet}
+                    alt="portfolio"
+                    width={1000}
+                    height={1000}
+                    className="md:hidden ss:flex hidden"
+                  />
+                  <Image
+                    src={item.image.mobile}
+                    alt="portfolio"
+                    width={1000}
+                    height={1000}
+                    className="ss:hidden flex"
                   />
                   <div className="absolute p-[30px] bottom-0 left-0 z-[4]">
                     <h4 className="text-white font-semibold text-[22px]">
@@ -53,7 +68,7 @@ const Page = () => {
                 </div>
               );
             })}
-            <div className="text-[#EEEFF4] absolute top-[132px] text-[18px] left-[-132px] rotate-90 leading-none tracking-[1.2em]">
+            <div className="hidden ss:flex text-[#EEEFF4] absolute top-[132px] text-[18px] left-[-132px] rotate-90 leading-none tracking-[1.2em]">
               PORTFOLIO
             </div>
           </div>

@@ -5,12 +5,12 @@ import Image from "next/image";
 const Heritage: React.FC<DataProps> = ({ data }) => {
   const heritage = data?.aboutData?.heritage;
   return (
-    <div className="w-full h-[568px] flex gap-12 mb-[172px]">
-      <div>
-        <h3 className="text-[64px] mb-[40px] font-semibold">
+    <div className="w-full h-[568px] md:flex gap-12 mb-[172px]">
+      <div className="w-full">
+        <h3 className="text-[40px] ss:text-[64px] mb-[40px] font-semibold">
           {heritage?.heading}
         </h3>
-        <div className="w-[500px] text-darkGrey text-[22px] leading-tight flex flex-col gap-[30px]">
+        <div className="w-full md:w-[500px] text-darkGrey text-[22px] leading-tight flex flex-col gap-[30px]">
           <p>
             Founded in 2007, we started as a trio of architects. Our
             complimentary skills and relentless attention to detail turned Arch
@@ -34,7 +34,7 @@ const Heritage: React.FC<DataProps> = ({ data }) => {
           alt="heritage image"
           width={1000}
           height={1000}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover hidden md:flex"
         />
       </div>
     </div>

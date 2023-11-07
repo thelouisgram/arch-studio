@@ -28,14 +28,14 @@ const Page = () => {
         <section
           className={` ${
             !isLoading && data ? "display-block" : "display-none"
-          } font-Spartan px-16 container w-full h-full text-dark relative`}
+          } font-Spartan px-0 ss:px-10 md:px-16 md:container w-full h-full text-dark relative`}
         >
           <Header />
-          <div className="w-full h-full px-20 relative">
+          <div className="w-full h-full px-[30px] ss:px-16 md:px-20 relative">
             <Hero data={data} />
             <Heritage data={data} />
             <Leaders data={data} />
-            <div className="text-[#EEEFF4] absolute top-[118px] text-[18px] left-[-116px] rotate-90 leading-none tracking-[1.2em]">
+            <div className="hidden ss:flex text-[#EEEFF4] absolute top-[118px] text-[18px] left-[-116px] rotate-90 leading-none tracking-[1.2em]">
               ABOUT US
             </div>
           </div>

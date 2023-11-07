@@ -4,11 +4,11 @@ import { DataProps } from "../../../types/home";
 const Details: React.FC<DataProps> = ({ data }) => {
   const details = data?.contactData?.sectionDetailsAndMap;
   return (
-    <div className="w-full h-full flex mb-[172px] gap-40">
-      <h2 className="font-semibold text-[64px] w-[216px] leading-none">
+    <div className="w-full h-full flex flex-col md:flex-row mb-[172px] gap-20 md:gap-40">
+      <h2 className="font-semibold text-[40px] ss:text-[64px] w-full md:w-[216px] leading-none">
         Contact Details
       </h2>
-      <div className="flex gap-20">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-20">
         {details?.offices.map((item: any, index: number) => {
           return (
             <div key={index}>

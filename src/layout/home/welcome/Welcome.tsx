@@ -6,17 +6,17 @@ const Welcome: React.FC<DataProps> = ({ data }) => {
   const details = data?.HomePageWelcome;
 
   return (
-    <div className="w-full h-full px-20 mb-[128px]">
+    <div className="w-full h-full px-[30px] ss:px-16 md:px-20 mb-[128px]">
       <div className="w-full h-full relative z-[10]">
-        <h1 className="text-[230px] text-[#EEEFF4] font-bold leading-none z-[10]">
+        <h1 className="text-[64px] ss:text-[140px] md:text-[230px] text-[#EEEFF4] font-bold leading-none z-[10] mb-10 ss:mb-0">
           Welcome
         </h1>
         <div className="w-full flex gap-10">
-          <div className="pl-[180px] mt-[-50px]">
-            <h3 className="text-dark text-[64px] w-[450px] leading-none font-semibold mb-[40px]">
+          <div className="md:pl-[180px] md:mt-[-50px]">
+            <h3 className="text-dark text-[40px] ss:text-[64px] ss:w-[450px] leading-none font-semibold mb-[40px]">
               {details?.heading}
             </h3>
-            <div className="w-[450px] flex flex-col gap-[30px] text-[22px] text-darkGrey">
+            <div className="w-full md:w-[450px] flex flex-col gap-[30px] text-[22px] text-darkGrey">
               <p>
                 We have a unique network and skill-set to help bring your
                 projects to life. Our small team of highly skilled individuals
@@ -36,7 +36,7 @@ const Welcome: React.FC<DataProps> = ({ data }) => {
               </p>
             </div>
           </div>
-          <div className="mt-[-100px] w-auto h-auto z-[-3]">
+          <div className="hidden md:block aspect-[350/568] mt-[-100px] w-auto h-[690px] z-[-3] overflow-hidden">
             <Image
               src={details?.img}
               width={500}
