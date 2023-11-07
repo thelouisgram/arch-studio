@@ -10,6 +10,9 @@ const Banner: React.FC<DataProps> = ({ data }) => {
     <div className="px-20 relative h-[720px] w-full mb-[100px]">
       <Slider data={data} page={page} />
       <Pagination page={page} setPage={setPage} />
+      <div className="text-[#EEEFF4] absolute top-[60px] text-[18px] left-[-56px] rotate-90 leading-none tracking-[1.2em]">
+        HOME
+      </div>
     </div>
   );
 };

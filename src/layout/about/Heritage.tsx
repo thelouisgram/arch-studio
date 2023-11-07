@@ -1,16 +1,16 @@
-import React from 'react'
-import { DataProps } from '../../../types/home'
-import Image from 'next/image';
+import React from "react";
+import { DataProps } from "../../../types/home";
+import Image from "next/image";
 
-const Heritage:React.FC<DataProps> = ({data}) => {
-    const heritage = data?.aboutData?.heritage
+const Heritage: React.FC<DataProps> = ({ data }) => {
+  const heritage = data?.aboutData?.heritage;
   return (
-    <div className="w-full h-[568px] flex gap-12 mb-[164px]">
+    <div className="w-full h-[568px] flex gap-12 mb-[172px]">
       <div>
         <h3 className="text-[64px] mb-[40px] font-semibold">
           {heritage?.heading}
         </h3>
-        <div className='w-[500px] text-darkGrey text-[22px] leading-tight flex flex-col gap-[30px]'>
+        <div className="w-[500px] text-darkGrey text-[22px] leading-tight flex flex-col gap-[30px]">
           <p>
             Founded in 2007, we started as a trio of architects. Our
             complimentary skills and relentless attention to detail turned Arch
@@ -28,11 +28,17 @@ const Heritage:React.FC<DataProps> = ({data}) => {
           </p>
         </div>
       </div>
-      <div className='w-full h-full'>
-        <Image src={heritage?.heritageImg} alt='heritage image' width={1000} height={1000} className='w-full h-full object-cover'/>
+      <div className="w-full h-full">
+        <Image
+          src={heritage?.heritageImg}
+          alt="heritage image"
+          width={1000}
+          height={1000}
+          className="w-full h-full object-cover"
+        />
       </div>
     </div>
   );
-}
+};
 
-export default Heritage
+export default Heritage;

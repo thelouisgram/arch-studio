@@ -8,7 +8,7 @@ const Page = () => {
     const { data } = state;
     const portfolio = data?.portfolioData;
   return (
-    <div className="w-full h-full grid grid-cols-3 gap-7 px-20 mb-[128px]">
+    <div className="w-full h-full grid grid-cols-3 gap-7 px-20 mb-[128px] relative">
       {portfolio?.map((item: any, index: number) => {
         return (
           <div key={item.id} className="relative w-full h-full">
@@ -28,6 +28,9 @@ const Page = () => {
           </div>
         );
       })}
+      <div className="text-[#EEEFF4] absolute top-[132px] text-[18px] left-[-132px] rotate-90 leading-none tracking-[1.2em]">
+        PORTFOLIO
+      </div>
     </div>
   );
 }

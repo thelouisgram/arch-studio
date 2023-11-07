@@ -5,7 +5,7 @@ import Image from "next/image";
 const Hero: React.FC<DataProps> = ({ data }) => {
   const hero = data?.aboutData?.hero;
   return (
-    <div className="w-full h-[725px] mb-[164px] relative">
+    <div className="w-full h-[725px] mb-[172px] relative">
       <div className="w-full h-full flex flex-col items-end justify-end">
         <h1 className="text-[230px] text-[#EEEFF4] font-bold leading-none z-[10] capitalize mb-[-125px]">
           {hero?.headingLarge}

@@ -45,7 +45,7 @@ const Leaders: React.FC<DataProps> = ({ data }) => {
     }
   );
   return (
-    <div className="w-full h-full flex gap-20 mb-[164px]">
+    <div className="w-full h-full flex gap-20 mb-[172px]">
       <h4 className="font-semibold text-[64px] w-[216px] leading-none">
         {leaders?.heading}
       </h4>
