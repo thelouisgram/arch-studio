@@ -19,25 +19,25 @@ const Featured: React.FC<DataProps> = ({ data }) => {
           return (
             <div key={item.id} className="relative w-full h-full">
               <Image
-                src={item?.image.desktop}
+                src={item.image.desktop}
                 alt="portfolio"
-                width={1000}
-                height={1000}
-                className="hidden md:flex"
+                width={350}
+                height={560}
+                className="hidden md:flex object-cover w-full h-auto"
               />
               <Image
-                src={item?.image.tablet}
+                src={item.image.tablet}
                 alt="portfolio"
-                width={1000}
-                height={1000}
-                className="ss:flex md:hidden hidden"
+                width={573}
+                height={240}
+                className="md:hidden ss:flex hidden object-cover w-full h-auto"
               />
               <Image
-                src={item?.image.mobile}
+                src={item.image.mobile}
                 alt="portfolio"
-                width={1000}
-                height={1000}
-                className="flex ss:hidden"
+                width={311}
+                height={240}
+                className="ss:hidden flex object-cover w-full h-auto"
               />
               <h2 className="font-bold text-[200px] absolute right-[-15px] top-[10px] leading-none text-white opacity-[50%]">
                 {index + 1}

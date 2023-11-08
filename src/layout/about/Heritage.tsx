@@ -5,7 +5,7 @@ import Image from "next/image";
 const Heritage: React.FC<DataProps> = ({ data }) => {
   const heritage = data?.aboutData?.heritage;
   return (
-    <div className="w-full h-[568px] md:flex gap-12 mb-[172px]">
+    <div className="w-full md:h-[568px] md:flex md:gap-12 mb-[172px]">
       <div className="w-full">
         <h3 className="text-[40px] ss:text-[64px] mb-[40px] font-semibold">
           {heritage?.heading}

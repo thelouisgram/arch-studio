@@ -13,14 +13,32 @@ const Hero: React.FC<DataProps> = ({ data }) => {
         <About />
         <div className="w-full absolute h-full left-0 top-0 bg-black opacity-[55%] z-[-1]" />
         {data && (
-          <Image
-            src={data?.HomePageBannerImgs?.desktop}
-            alt="banner image"
-            width={1000}
-            height={1000}
-            className="h-full w-full object-cover z-[-4] top-0 left-0 absolute"
-            priority={true}
-          />
+          <>
+            <Image
+              src={data?.HomePageBannerImgs?.desktop}
+              alt="banner image"
+              width={1110}
+              height={560}
+              className="h-full w-full object-cover z-[-4] top-0 left-0 absolute hidden md:flex"
+              priority={true}
+            />
+            <Image
+              src={data?.HomePageBannerImgs?.tablet}
+              alt="banner image"
+              width={375}
+              height={560}
+              className="h-full w-full object-cover z-[-4] top-0 left-0 absolute hidden ss:flex md:hidden"
+              priority={true}
+            />
+            <Image
+              src={data?.HomePageBannerImgs?.mobile}
+              alt="banner image"
+              width={375}
+              height={560}
+              className="h-full w-full object-cover z-[-4] top-0 left-0 absolute flex ss:hidden"
+              priority={true}
+            />
+          </>
         )}
       </div>
     </div>

@@ -5,15 +5,15 @@ import Image from "next/image";
 const Hero: React.FC<DataProps> = ({ data }) => {
   const hero = data?.contactData?.hero;
   return (
-    <div className="w-full h-[725px] mb-[172px] relative">
+    <div className="w-full h-[725px] mb-[100px] ss:mb-[172px] relative">
       <div className="w-full h-full flex flex-col ss:items-end justify-end">
         <h1
           className="text-[72px] ss:text-[140px] md:text-[230px] text-[#EEEFF4] font-bold leading-none z-[10] 
-        capitalize mb-[-40px] ss:mb-[-72px] md:mb-[-125px]"
+        capitalize mb-[-35px] ss:mb-[-72px] md:mb-[-125px]"
         >
           {hero?.headingLarge}
         </h1>
-        <div className="w-[80%] h-[50px] flex ss:hidden bg-white " />
+        <div className="w-[80%] h-[40px] flex ss:hidden bg-white " />
         <div
           className="w-full ss:w-[500px] md:w-[600px] h-[300px] ss:h-[500px] ss:pl-[60px] md:pl-[185px] flex 
         flex-col justify-end z-[9] bg-white"
@@ -32,9 +32,23 @@ const Hero: React.FC<DataProps> = ({ data }) => {
         <Image
           src={hero?.image.desktop}
           alt="hero image"
-          width={1000}
-          height={1000}
-          className="w-full h-full object-cover z-[-3]"
+          width={635}
+          height={720}
+          className="w-full h-full object-cover z-[-3] hidden md:flex"
+        />
+        <Image
+          src={hero?.image.tablet}
+          alt="hero image"
+          width={573}
+          height={720}
+          className="w-full h-full object-cover z-[-3] hidden ss:flex md:hidden"
+        />
+        <Image
+          src={hero?.image.tablet}
+          alt="hero image"
+          width={573}
+          height={720}
+          className="w-full h-full object-cover z-[-3] flex ss:hidden"
         />
       </div>
     </div>

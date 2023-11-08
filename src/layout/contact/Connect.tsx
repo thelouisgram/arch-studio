@@ -42,7 +42,7 @@ const Connect: React.FC = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col md:flex-row mb-[172px] gap-20 md:gap-40">
+    <div className="w-full h-full flex flex-col md:flex-row mb-[200px] gap-10 md:gap-40">
       <h2 className="font-semibold text-[40px] ss:text-[64px] w-full md:w-[216px] leading-none">
         Connect with us
       </h2>

@@ -18,14 +18,30 @@ const Slider: React.FC<SliderProps> = ({ data, page }) => {
       </div>
       <div className="w-full h-full absolute top-0 left-0">
         {slider && (
-          <Image
-            src={slider?.images.desktop}
-            alt="banner image"
-            width={1000}
-            height={1000}
-            className="h-full w-full object-cover"
-            priority={true}
-          />
+          <>
+            <Image
+              src={slider?.images.desktop}
+              alt="banner image"
+              width={1110}
+              height={720}
+              className="h-full w-full object-cover hidden md:flex "
+              priority={true}
+            />
+            <Image
+              src={slider?.images.tablet}
+              alt="banner image"
+              width={573}
+              height={720}
+              className="md:hidden ss:flex hidden object-cover w-full h-full"
+            />
+            <Image
+              src={slider?.images.mobile}
+              alt="banner image"
+              width={375}
+              height={560}
+              className="ss:hidden flex object-cover w-full h-full"
+            />
+          </>
         )}
       </div>
       <div className="w-full absolute h-full top-0 bg-black opacity-[55%] z-[3]" />
