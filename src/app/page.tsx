@@ -60,7 +60,7 @@ const Page = () => {
           {isScrolled && (
             <button
               onClick={scrollToTop}
-              className="w-[50px] h-[50px] fixed flex -rotate-90 justify-center items-center p-3 cursor-pointer bg-dark right-3 
+              className="w-[40px] h-[40px] fixed flex -rotate-90 justify-center items-center p-3 cursor-pointer bg-red md:bg-dark right-3 
               z-[20002] bottom-10"
             >
               <Image src="/assets/icons/arrow-icon.svg" alt="up" width={33} height={27}/>
