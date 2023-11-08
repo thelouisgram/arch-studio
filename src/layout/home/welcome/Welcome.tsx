@@ -16,7 +16,7 @@ const Welcome: React.FC<DataProps> = ({ data }) => {
             <h3 className="text-dark text-[40px] ss:text-[64px] ss:w-[450px] leading-none font-semibold mb-[40px]">
               {details?.heading}
             </h3>
-            <div className="w-full md:w-[450px] flex flex-col gap-[30px] text-[22px] text-darkGrey">
+            <div className="leading-tight w-full md:w-[450px] flex flex-col gap-[30px] text-[18px] text-darkGrey">
               <p>
                 We have a unique network and skill-set to help bring your
                 projects to life. Our small team of highly skilled individuals

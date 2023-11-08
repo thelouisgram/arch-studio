@@ -10,7 +10,7 @@ const Heritage: React.FC<DataProps> = ({ data }) => {
         <h3 className="text-[40px] ss:text-[64px] mb-[40px] font-semibold">
           {heritage?.heading}
         </h3>
-        <div className="w-full md:w-[500px] text-darkGrey text-[22px] leading-tight flex flex-col gap-[30px]">
+        <div className="w-full md:w-[500px] text-darkGrey text-[18px] leading-tight flex flex-col gap-[30px]">
           <p>
             Founded in 2007, we started as a trio of architects. Our
             complimentary skills and relentless attention to detail turned Arch

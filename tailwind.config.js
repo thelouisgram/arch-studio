@@ -17,7 +17,7 @@ module.exports = {
         dark: 'hsl(234, 9%, 12%)',
         grey: 'hsl(214, 20%, 96%)',
         darkGrey: 'hsl(214, 7%, 32%)',
-        white: 'hsl(150, 100%, 99%)',
+        white: 'hsl(0, 0%, 100%)',
         red: 'hsl(352, 68%, 57%)',
       },
       fontFamily: {
