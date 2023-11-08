@@ -3,7 +3,7 @@ import FooterNavlinks from './FooterNavlinks'
 
 const MobileNav = () => {
   return (
-    <div className='w-full h-[200px] py-10 bg-white flex items-center justify-center absolute top-[100px] left-0 z-[10022]'>
+    <div className='flex ss:hidden w-full h-auto py-10 bg-white  items-center justify-center absolute top-[100px] left-0 z-[10022]'>
       <FooterNavlinks />
     </div>
   )

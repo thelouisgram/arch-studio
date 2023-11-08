@@ -36,7 +36,7 @@ const Welcome: React.FC<DataProps> = ({ data }) => {
               </p>
             </div>
           </div>
-          <div className="hidden md:block aspect-[350/568] mt-[-100px] w-auto h-[690px] z-[-3] overflow-hidden">
+          <div className="hidden md:block aspect-[350/568] mt-[-100px] w-auto h-[490px] z-[-3] overflow-hidden">
             <Image
               src={details?.img}
               width={500}

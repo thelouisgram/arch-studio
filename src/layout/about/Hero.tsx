@@ -13,8 +13,9 @@ const Hero: React.FC<DataProps> = ({ data }) => {
         >
           {hero?.headingLarge}
         </h1>
+        <div className="w-[80%] h-[50px] flex ss:hidden bg-white "/>
         <div
-          className="w-full ss:w-[500px] md:w-[600px] h-[350px] ss:h-[500px] ss:pl-[60px] md:pl-[185px] flex 
+          className="w-full ss:w-[500px] md:w-[600px] h-[300px] ss:h-[500px] ss:pl-[60px] md:pl-[185px] flex 
         flex-col justify-end z-[9] bg-white"
         >
           <div className="w-10 h-[2px] bg-grey mb-10" />

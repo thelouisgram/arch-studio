@@ -35,7 +35,7 @@ const Page = () => {
               return (
                 <div
                   key={item.id}
-                  className="relative w-full h-full md:aspect-[452/724]"
+                  className="relative w-full h-full aspect-[350/255] ss:aspect-[560/235] md:aspect-[452/724]"
                 >
                   <Image
                     src={item.image.desktop}
