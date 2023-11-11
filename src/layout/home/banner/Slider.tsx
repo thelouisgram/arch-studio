@@ -64,6 +64,7 @@ const Slider: React.FC<SliderProps> = ({ data, page }) => {
               animate={page === index ? "active" : "inactive"}
               variants={sliderVariants}
               transition={{ ease: "easeInOut", duration: 0.5 }}
+              className="w-full h-full"
             >
               <Image
                 src={item?.images.desktop}
