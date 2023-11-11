@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Arch Studio multi-page website
+This is a solution to the [Arch Studio multi-page website](https://www.frontendmentor.io/challenges/arch-studio-multipage-website-wNIbOFYR6).
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Getting Started
+<img src="https://github.com/thelouisgram/arch-studio/blob/master/public/assets/readme/challenge.jpg">
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#Screenshot)
+  - [Links](#Links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### The challenge
 
-## Learn More
+Your users should be able to:
 
-To learn more about Next.js, take a look at the following resources:
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- Receive an error message when the contact form is submitted if:
+- The Name, Email or Message fields are empty should show "Can't be empty"
+ -The Email is not formatted correctly should show "Please use a valid email address"
+- Bonus: View actual locations on the contact page map (we recommend Leaflet JS for this)
+  
+## Overview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Screenshot
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+                This is a desktop View.
+                 
+<img src="https://github.com/thelouisgram/arch-studio/blob/master/public/assets/readme/desktop-view.png">
 
-## Deploy on Vercel
+                 This is a tablet view.
+                 
+  <p align="center">
+   <img src="https://github.com/thelouisgram/arch-studio/blob/master/public/assets/readme/tablet-view.png" height="500px">
+  </p>
+  
+  
+                 This is a mobile view.
+                 
+  <p align="center">
+   <img src="https://github.com/thelouisgram/arch-studio/blob/master/public/assets/readme/mobile-view.png" height="500px">
+  </p>
+  
+### Links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Live Site URL](https://arch-the-studio.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## My process
+
+### Built with
+
+- TailwindCss
+- NextJs
+- TypeScript
+- Framer-motion
+
+### What I learned
+- Proper use of Framer motion
+
+
+### Useful resources
+
+- ChatGPT
+- Framer Motion Documentation 
+
+## Author
+
+- Frontend Mentor -https://www.frontendmentor.io/profile/thelouisgram
