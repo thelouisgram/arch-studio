@@ -16,7 +16,8 @@ const MobileNav: React.FC<navProps> = ({ nav }) => {
       animate={nav ? "opened" : "closed"}
       variants={variants}
       transition={{duration:0.5, ease: "easeInOut"}}
-      className="flex ss:hidden w-full h-auto py-10 bg-white  items-center justify-center absolute top-[100px] left-0 z-[10022]"
+      className={` ${nav && "hidden"} flex ss:hidden w-full h-auto py-10 bg-white  items-center justify-center absolute 
+      top-[100px] left-0 z-[10022]`}
     >
       <FooterNavlinks />
     </motion.nav>
