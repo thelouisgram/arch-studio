@@ -41,7 +41,7 @@ const Page = () => {
 
   return (
     <div className="h-full w-full relative">
-      {isLoading && <Loader />}
+      <Loader isLoading={isLoading} />
       {!isLoading && data && (
         <section
           className={` ${

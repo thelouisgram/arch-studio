@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
 import { scrollToTop } from "../../../utils/shared";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Page = () => {
   const { state } = FetchData("/data.json");
@@ -39,7 +40,7 @@ const Page = () => {
 
   return (
     <div className="h-full w-full relative">
-      {isLoading && <Loader />}
+      <Loader isLoading={isLoading} />
 
       {!isLoading && data && (
         <section
@@ -51,7 +52,17 @@ const Page = () => {
           <div className="w-full h-full grid grid-cols-1 md:grid-cols-3 gap-7 px-[30px] ss:px-16 md:px-20 mb-[200px] relative">
             {portfolio?.map((item: any, index: number) => {
               return (
-                <div key={item.id} className="relative w-full h-auto">
+                <motion.div
+                  key={item.id}
+                  initial={{ opacity: 0, x: 40 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: 0.5,
+                    delay: index * 0.2,
+                  }}
+                  className="relative w-full h-auto"
+                >
                   <Image
                     src={item.image.desktop}
                     alt="portfolio"
@@ -80,7 +91,7 @@ const Page = () => {
                     <p className="text-white">View All Projects</p>
                   </div>
                   <div className="w-full absolute h-full top-0 bg-black opacity-[20%] z-[3]" />
-                </div>
+                </motion.div>
               );
             })}
             <div className="hidden ss:flex text-[#EEEFF4] absolute top-[132px] text-[18px] left-[-132px] rotate-90 leading-none tracking-[1.2em]">

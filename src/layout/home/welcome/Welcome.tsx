@@ -1,6 +1,7 @@
 import React from "react";
 import { DataProps } from "../../../../types/home";
 import Image from "next/image";
+import { easeInOut, motion } from "framer-motion";
 
 const Welcome: React.FC<DataProps> = ({ data }) => {
   const details = data?.HomePageWelcome;
@@ -8,9 +9,15 @@ const Welcome: React.FC<DataProps> = ({ data }) => {
   return (
     <div className="w-full h-full px-[30px] ss:px-16 md:px-20 mb-[128px]">
       <div className="w-full h-full relative z-[10]">
-        <h1 className="text-[64px] ss:text-[140px] md:text-[230px] text-[#EEEFF4] font-bold leading-none z-[10] mb-10 ss:mb-0">
+        <motion.h1
+          initial={{ x: 100 }}
+          whileInView={{ x: 0 }}
+          viewport={{ once: true }}
+          transition={{ ease: "easeInOut", duration: 0.5 }}
+          className="text-[64px] ss:text-[140px] md:text-[230px] text-[#EEEFF4] font-bold leading-none z-[10] mb-10 ss:mb-0"
+        >
           Welcome
-        </h1>
+        </motion.h1>
         <div className="w-full flex gap-10">
           <div className="md:pl-[180px] md:mt-[-50px]">
             <h3 className="text-dark text-[40px] ss:text-[64px] ss:w-[450px] leading-none font-semibold mb-[40px]">

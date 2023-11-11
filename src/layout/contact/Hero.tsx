@@ -1,11 +1,15 @@
 import React from "react";
 import { DataProps } from "../../../types/home";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Hero: React.FC<DataProps> = ({ data }) => {
   const hero = data?.contactData?.hero;
   return (
-    <div className="w-full h-[725px] mb-[100px] ss:mb-[172px] relative">
+    <motion.div 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration: 0.5, ease: "easeInOut"}} className="w-full h-[725px] mb-[100px] ss:mb-[172px] relative">
       <div className="w-full h-full flex flex-col ss:items-end justify-end">
         <h1
           className="text-[72px] ss:text-[140px] md:text-[230px] text-[#EEEFF4] font-bold leading-none z-[10] 
@@ -51,7 +55,7 @@ const Hero: React.FC<DataProps> = ({ data }) => {
           className="w-full h-full object-cover z-[-3] flex ss:hidden"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

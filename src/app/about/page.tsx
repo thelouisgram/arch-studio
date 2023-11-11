@@ -15,32 +15,32 @@ const Page = () => {
   const { state } = FetchData("/data.json");
   const { data } = state;
   const [isLoading, setIsLoading] = useState(true);
-const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-useEffect(() => {
-  if (data) {
-    setTimeout(() => setIsLoading(false), 800);
-  }
-}, [data]);
-
-useEffect(() => {
-  const checkScrollPosition = () => {
-    if (window.scrollY !== 0) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
+  useEffect(() => {
+    if (data) {
+      setTimeout(() => setIsLoading(false), 800);
     }
-  };
+  }, [data]);
 
-  window.addEventListener("scroll", checkScrollPosition);
+  useEffect(() => {
+    const checkScrollPosition = () => {
+      if (window.scrollY !== 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-  return () => {
-    window.removeEventListener("scroll", checkScrollPosition);
-  };
-}, []);
+    window.addEventListener("scroll", checkScrollPosition);
+
+    return () => {
+      window.removeEventListener("scroll", checkScrollPosition);
+    };
+  }, []);
   return (
     <div className="h-full w-full relative">
-      {isLoading && <Loader />}
+      <Loader isLoading={isLoading} />
 
       {!isLoading && data && (
         <section
