@@ -60,7 +60,11 @@ const Slider: React.FC<SliderProps> = ({ data, page }) => {
         </div>
         <div className="w-full h-full absolute top-0 left-0">
           {item && (
-            <>
+            <motion.div
+              animate={page === index ? "active" : "inactive"}
+              variants={sliderVariants}
+              transition={{ ease: "easeInOut", duration: 0.5 }}
+            >
               <Image
                 src={item?.images.desktop}
                 alt="banner image"
@@ -83,7 +87,7 @@ const Slider: React.FC<SliderProps> = ({ data, page }) => {
                 height={560}
                 className="ss:hidden flex object-cover w-full h-full"
               />
-            </>
+            </motion.div>
           )}
         </div>
         <div className="w-full absolute h-full top-0 bg-black opacity-[55%] z-[3]" />
