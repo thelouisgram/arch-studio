@@ -9,7 +9,7 @@ interface navProps {
 const MobileNav: React.FC<navProps> = ({ nav }) => {
   const variants = {
     opened: { opacity: 1, x: 0 },
-    closed: { opacity: 1, x: "-100%" },
+    closed: { opacity: 1, x: "100%" },
   };
   return (
     <motion.nav

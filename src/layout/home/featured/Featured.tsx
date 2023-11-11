@@ -31,6 +31,7 @@ const Featured: React.FC<DataProps> = ({ data }) => {
               transition={{
                 ease: "easeInOut",
                 duration: 0.5,
+                delay: index * 0.2
               }}
             >
               <Image

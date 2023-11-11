@@ -51,7 +51,7 @@ const Slider: React.FC<SliderProps> = ({ data, page }) => {
           </motion.p>
           <motion.div
             animate={page === index ? "active" : "inactive"}
-            variants={headingVariants}
+            variants={descVariants}
             transition={{ ease: "easeInOut", duration: 0.3, delay: 0.3 }}
             className="w-full h-auto flex justify-start"
           >
