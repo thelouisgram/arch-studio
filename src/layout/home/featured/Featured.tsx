@@ -9,7 +9,7 @@ const Featured: React.FC<DataProps> = ({ data }) => {
   const selectedProjects = portfolio?.slice(3, 6);
 
   return (
-    <div className="h-full w-full px-[30px] ss:px-20 mb-[200px]">
+    <div className="h-full w-full px-[30px] ss:px-20 mb-[200px] overflow-hidden">
       <div className="w-full flex justify-between items-center mb-[70px]">
         <h3 className="text-[40px] ss:text-[64px] w-full text-center ss:text-left font-semibold leading-none">
           Featured
@@ -27,6 +27,7 @@ const Featured: React.FC<DataProps> = ({ data }) => {
               className="relative w-full h-full"
               initial={{ opacity: 0, x: 40 }}
               whileInView={{opacity: 1, x: 0}}
+              viewport={{once:true}}
               transition={{
                 ease: "easeInOut",
                 duration: 0.5,
